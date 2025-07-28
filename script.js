@@ -45,13 +45,22 @@ btnChutar.addEventListener("click", function () {
 
 // Função de Finalizar e Reinicialização do jogo depois de 5 segundos
 function finalizarJogo() {
+    console.log("Finalizando jogo, desabilitando inputs...");
+    input.disabled = true;
+    btnChutar.disabled = true;
+
     setTimeout(() => {
+        console.log("Reiniciando jogo...");
         numeroSecreto = gerarNumeroAleatorio();
         contadorTentativas = 0;
-        resultado.textContent = "RESULTADO:";
+        resultado.textContent = "NOVO JOGO! TENTE NOVAMENTE.";
         tentativasEl.textContent = "TENTATIVAS:";
-    }, 3000);
+        input.disabled = false;
+        btnChutar.disabled = false;
+        input.focus();
+    }, 5000);
 }
+
 
 // Botõa das Regras
 const abrirBotao = document.getElementById("abrirRegras");
