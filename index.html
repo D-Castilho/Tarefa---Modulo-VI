@@ -17,24 +17,22 @@
             <span>TESTE SUA INTUIÇÃO!</span>
         </div>
 
-        <!--Input dos Valores-->
-        <form>
-            <input id="valor" type="number" class="caixa" placeholder="Insira seu palpite" />
-
-        <!--Botão do Palpite-->
-            <button id="btnChutar" type="button">Chutar</button>
-        </form>
-
         <!--Mensagens de Resultados/Tentativas-->
+        <div class="linha">
+        <p id="mensagemResultado">RESULTADO:</p>
+        <p id="tentivasRestantes">TENTATIVAS:</p>
+        </div>    
 
         <div class="descrição">
             <p id="descriçãoTema">ESTOU PENSANDO EM UM NÚMERO ENTRE 1 A 100. CONSEGUE ADIVINHAR?</p>
         </div>
 
-        <div class="linha">
-        <p id="mensagemResultado">RESULTADO:</p>
-        <p id="tentivasRestantes">TENTATIVAS:</p>
-        </div>    
+        <!--Input dos Valores-->
+        <form id="formPalpite">
+            <input id="valor" type="number" class="caixa" placeholder="Insira seu palpite" />
+        <!--Botão do Palpite-->
+            <button id="btnChutar" type="button">Chutar</button>
+        </form>
 
         <!--Abrir as Regras-->
         <button id="abrirRegras">Regras</button>

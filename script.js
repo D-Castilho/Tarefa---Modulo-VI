@@ -29,7 +29,8 @@ btnChutar.addEventListener("click", function () {
         resultado.textContent = "RESULTADO: CORRETO!";
         finalizarJogo();
     } else {
-        resultado.textContent = "RESULTADO: INCORRETO!";
+        let dica = chute < numeroSecreto ? "O NÚMERO SECRETO É MAIOR." : "O NÚMERO SECRETO É MENOR."
+        resultado.textContent = `RESULTADO: INCORRETO! ${dica}`;
         tentativasEl.textContent = `TENTATIVAS: ${contadorTentativas} / ${maxTentativas}`;
 
         if (contadorTentativas >= maxTentativas) {
@@ -49,7 +50,7 @@ function finalizarJogo() {
         contadorTentativas = 0;
         resultado.textContent = "RESULTADO:";
         tentativasEl.textContent = "TENTATIVAS:";
-    }, 5000);
+    }, 3000);
 }
 
 // Botõa das Regras
