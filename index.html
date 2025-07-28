@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intuition game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!--Conteído Principal-->
+    <div class="container">
+        <div class="input">
+        <!--Titulo do Tema-->
+        <div class="tema">
+            <span>TESTE SUA INTUIÇÃO!</span>
+        </div>
+        <!--Input dos Valores-->
+        <form>
+            <input id="valor" type="number" class="caixa" placeholder="Insira seu palpite" />
+        <!--Botão do Palpite-->
+            </select>
+            <button id="btnChutar" type="button">Chutar</button>
+        </form>
+        <div class="linha">
+        <p id="mensagemResultado">RESULTADO:</p>
+        <p id="tentivasRestantes">TENTATIVAS:</p>
+        </div>    
+        <!--Abrir as Regras-->
+        <button id="abrirRegras">Regras</button>
+        <!--Pop Up das Regras-->
+            <div class="modal" id="modal">
+                <div class="modal-inner">
+                <h2>REGRAS DO JOGO:</h2>
+                <p>TENTE ADVINHAR UM NÚMERO ENTRE 1 A 100.</p>
+                <p>VOCÊ TERÁ 10 CHANCES.</p>
+                <p>DIGITE SEU PALPITE E CLIQUE EM "CHUTAR".</p>
+        <!--Fechar as Regras-->
+                <button id="fecharRegras">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
