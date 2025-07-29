@@ -62,7 +62,7 @@ function finalizarJogo() {
 }
 
 
-// Botõa das Regras
+// Botão das Regras
 const abrirBotao = document.getElementById("abrirRegras");
 const fecharBotao = document.getElementById("fecharRegras");
 const modal = document.getElementById("modal");
