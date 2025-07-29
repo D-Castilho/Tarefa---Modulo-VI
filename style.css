@@ -176,6 +176,12 @@ button {
         2px 2px 0 6px #000000;
 }
 
+button:hover {
+    background-color: #55604d;
+    color: #f7fcd2;
+    transition: 0.3s ease;
+}
+
 /* Regras - Botão Fechar */
 #fecharRegras {
     position: relative;
